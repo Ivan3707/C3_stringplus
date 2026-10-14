@@ -1,78 +1,4 @@
-# s21_string+
-
-Implementation of the string.h library with additions.
-
-The russian version of the task can be found in the repository.
-
-
-💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
-
-## Contents
-0. [Preamble](#preamble)
-1. [Chapter I](#chapter-i) \
-    1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
-    2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) \
-    3.1. [Part 1](#part-1-implementation-of-the-stringh-library-functions)  
-    3.2. [Part 2](#part-2-partial-implementation-of-the-sprintf-function)  
-    3.3. [Part 3](#part-3-bonus-implementation-of-some-format-modifiers-of-the-sprintf-function)  
-    3.4. [Part 4](#part-4-bonus-implementation-of-the-sscanf-function)  
-    3.5. [Part 5](#part-5-bonus-implementation-of-special-string-processing-functions)  
-
-## Instructions
-
-How to learn at “School 21”:
-
-- Here, you’ll find a unique learning experience with a lot of freedom. You’re given a task and left to find your own way to solve it, using whatever resources work best for you — whether that’s the Internet or AI tools like GigaChat. Just be mindful of information quality: verify, think critically, analyze, and compare.
-- Peer-to-peer (P2P) learning is the exchange of knowledge and experience with peers, where everyone acts as both mentor and student. This approach allows you to gain a deeper understanding of the material by learning from one another.
-- Feel free to ask for help: around you are peers who are also navigating this path for the first time. Share your own experience and ideas with others.  Join Rocket.Chat to stay updated with the latest community announcements. 
-- Your learning is meaningless if you just copy someone else’s solutions. When receiving help from others, always make sure you fully understand the “why”, “how”, and “purpose” behind the solution. Don’t be afraid to make mistakes. 
-- Does the task seem impossible? Take a break, get some fresh air and clear your mind — this has helped many people. Maybe after that, the solution will come to you naturally.
-- The learning process is just as important as the result. It’s not just about completing the task — it’s about understanding HOW to solve it. 
-
-## Preamble
-
-![s21_string+](misc/eng/images/s21_stringplus.png)
-
-1942, late evening, Bletchley Park, Alan Turing's desk. 
-
-For almost a year, a group of the brightest mathematicians, linguists, and crossword puzzle enthusiasts had been trying to solve the most difficult problem of all: breaking the German Enigma cipher, whose codes changed daily and whose number of possible combinations was about two to the power of 64. The group often had to come up with different algorithms, and they even developed a special set of keywords and their syntax for easy communication and logging, which is exactly like the well-known C language in our universe. What a remarkable coincidence! But there was a catch — the people at Bletchley Park had to remember the whole sequence of actions described in this language. 
-
-As you walk past Turing's desk, you notice a sheet of paper that says "For processing letters, punctuation marks, words and sentences". 
-
-*"What is this, Alan?"* you asked the thoughtful young man standing at the window.
-
-*"These are the functions that will make our lives easier! You know, cracking Enigma by brute force… I'd rather marry Joan than do that. So it seems we have to keep analysing texts, looking for patterns and coincidences. And so we're going to have to come up with different algorithms that are related to the processing of that very text and describe them. So we need a set of functions to help us do that. I'm working on them now."*
-
-*"And you are doing this using our new tool for representing unified algorithms?"*
-
-*"Yes, that is exactly what I am doing. Where else could we use these functions?"* Having said that, Turing looked at you as if you were an idiot. You noticed that and decided to show off your knowledge of the question: 
-
-*"You know I think we really need this. I just recently learnt this 'specific language of algorithm transfer'."*
-
-*"Seriously?"* Alan asked with some interest.
-
-*"Well, yes."*
-
-After a few seconds, Turing came to the logical conclusion of entrusting you with the job:
-
-*"Listen, do you want to do it yourself? Get some not-so-busy 
-and get on with it. And I'll continue to work on my mechanical code-breaking machine.*
-
-After thinking about it for a few seconds, you decide it's a great idea:
-
-*"Yes, I'll do everything in the best possible way!"*
-
-
-## Chapter I
-
-## Introduction
-
-In this project you will develop your own implementation of the string.h library in the C programming language with some additions (with your own implementation of the sprintf and sscanf functions). The string.h library is the main C library for string handling. As part of the project, you'll work on tasks involving string data and consolidate the structured approach.
-
-
-## Chapter II
+# C3_stringplus
 
 ## Information
 
@@ -183,9 +109,6 @@ where:
 | 3 | void *insert(const char *src, const char *str, size_t start_index) | Returns a new string in which a specified string (str) is inserted at a specified index position (start_index) in the given string (src). In case of any error, return NULL. |
 | 4 | void *trim(const char *src, const char *trim_chars) | Returns a new string in which all leading and trailing occurrences of a set of specified characters (trim_chars) from the given string (src) are removed. In case of any error, return NULL. |
 
-
-## Chapter III
-
 ## Part 1. Implementation of the string.h library functions
 
 It is necessary to implement the described [above](#stringh-functions) functions of the string.h library, as well as the s21_size type and the S21_NULL macro: 
@@ -233,7 +156,7 @@ Bonus assignment for extra points. You need to implement some format modifiers o
   - Precision description: .*
   - Length description: L
 
-## Part 4. Bonus. Implementation of the sscanf function
+## Part 4. Implementation of the sscanf function
 
 Bonus assignment for extra points. You need to implement the sscanf function from the stdio.h library:
 - The function must be placed in the s21_string.h library.
@@ -241,7 +164,7 @@ Bonus assignment for extra points. You need to implement the sscanf function fro
 - Full formatting (including flags, widths, modifiers and conversion types) must be supported.
 
 
-## Part 5. Bonus. Implementation of special string processing functions
+## Part 5. Implementation of special string processing functions
 
 Bonus assignment for extra points. You need to implement some string processing functions from the String class (described [here](#special-string-processing-functions-from-the-string-class-in-c)):
 - The functions must be placed in the s21_string.h library.
